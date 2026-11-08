@@ -72,20 +72,10 @@
 		if (["binbashbanana.github.io"].includes(window.location.hostname)) {
 			detector.textContent = "(current instance is official)";
 			detector.style.color = "#80ff80";
-		} else {
-			detector.textContent = "(tank911.luli@gmail.comcurrent instance is NOT official)";
-			detector.syle.color = "#ff8080";
-			document.getElementById("legal").classList.add("void");
-		}
-		var detector = document.getElementById("detectortank911");
-		if (["tank911.github.io"].includes(window.location.hostname)) {
-			detector.textContent = "(current instance is modification unless official)";
-			detector.style.color = "#ffe17f";
-		} else {
-			detector.textContent = "(current instance is NOT official)";
-			detector.style.color = "#ff8080";
-			document.getElementById("legal").classList.add("void");
-		}
+		} else (["tank911.github.io"].includes(window.location.hostname)) {
+			detector.textContent = "(current instance is modification unless official.)";
+			detector.style.color = "#FFE17F";
+        }
 		</script>
 	</body>
 </html>
